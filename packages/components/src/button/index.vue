@@ -1,3 +1,8 @@
 <template>
-    <button>测试按钮</button>
+    <button :style="{ color }">测试按钮</button>
 </template>
+<script lang="ts" setup>
+    const props = defineProps<{
+        color: 'blue' | 'red'
+    }>()
+</script>
